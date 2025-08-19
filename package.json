@@ -1,32 +1,24 @@
 {
-  "name": "node",
-  "version": "22.18.0",
-  "description": "node",
+  "name": "ex01-express",
+  "version": "1.0.0",
+  "description": "Tutorial de Node.JS + Express + PostgreSQL",
   "main": "index.js",
-  "keywords": [
-    "runtime"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/aredridel/node-bin-gen.git"
-  },
   "scripts": {
-    "preinstall": "node installArchSpecificPackage"
+    "start": "nodemon --exec babel-node api/index.js"
   },
-  "bin": {
-    "node": "bin/node"
-  },
+  "keywords": [
+    "node",
+    "express",
+    "postgres"
+  ],
+  "author": "Marcio Bueno",
+  "license": "MIT",
   "dependencies": {
-    "node-bin-setup": "^1.0.0"
-  },
-  "license": "ISC",
-  "author": "Kaiki Barros",
-  "engines": {
-    "npm": ">=5.0.0"
-  },
-  "bugs": {
-    "url": "https://github.com/aredridel/node-bin-gen/issues"
-  },
-  "homepage": "https://github.com/aredridel/node-bin-gen#readme",
-  "devDependencies": {}
+    "@babel/core": "^7.28.3",
+    "@babel/node": "^7.28.0",
+    "@babel/preset-env": "^7.28.3",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
 }
