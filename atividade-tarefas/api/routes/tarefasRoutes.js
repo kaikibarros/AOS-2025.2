@@ -11,4 +11,3 @@ router.delete('/:objectId', tarefasController.excluirTarefa);
 
 export default router;
 
-// feito
